@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data/Music_29918.ico" type="ico">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+    </style> 
+</head>
+<body>
+<div class="container">
+  <div class="container0">
+    <div class="Title">
+    <h1>El featuring a través del tiempo</h1>
+  </div>
+    <img class="img0" src="data/img0.jpg" alt="Italian Trulli">
+   
+   </div>
+  <div class="cont">
+    Hubo una época en que la unión de dos artistas era un acontecimiento para recordar. Con la llegada de la distribución digital, el consumo de la música cambió y ahora las plataformas musicales están atestadas  de música, cuyos intérpretes no son un artista o un grupo, sino varios.
+   
+    <br>
+    El “featuring”, comúnmente utilizado en la industria musical para indicar la participación de un artista invitado en una canción, es una práctica que ha cobrado relevancia en diversos géneros musicales, brindando la oportunidad de colaboración entre artistas y aportando variedad a las producciones.
+  <br>
+    El aumento de esta tendencia a través de los años puede visualizarse en el siguiente gráfico, donde, mediante un análisis de las canciones del top 50 semanal de los Billboard, se evidencia, que a medida que avanza el tiempo,son más las colaboraciones que colman estas listas. Esto nos da una noción de su popularidad actual.
+  </div>
+      
+    <!-- Graphics -->
+  <section class="graphic">
+    <div class="select">
+      <div>
+        <span>Tiempo:</span> 
+        <select id="line_time">
+          <option value="0">Todos</option>
+          <option value="1">50's</option>
+          <option value="2">60's</option>
+          <option value="3">70's</option>
+          <option value="4">80's</option>
+          <option value="5">90's</option>
+          <option value="6">00's</option>
+          <option value="7">10's</option>
+          <option value="8">20's</option>
+          <option value="9">Siglo XIX</option>
+          <option value="10">Siglo XX</option>
+        </select>
+      </div>
+      <div>
+        <span>Ranking:</span> 
+        <select id="line_ranking">
+          <option value="1">Top 1</option>
+          <option value="10">Top 10</option>
+          <option value="20">Top 20</option>
+          <option value="30">Top 30</option>
+          <option value="40">Top 40</option>
+          <option value="50">Top 50</option>
+        </select>
+      </div>
+    </div>
+    <canvas id="line_graph"></canvas>
+</section>
+
+<h3>Un poco de historia</h3>
+
+<div class="cont">
+  En la década de 1950, las colaboraciones entre cantantes a menudo eran entre artistas que compartían el mismo sello discográfico.
+Por ejemplo, muchos de los éxitos de duetos de la época eran entre artistas de Motown, como Marvin Gaye y Tammi Terrell, o entre artistas de Atlantic Records, como Ray Charles y Aretha Franklin.
+En los años 60 y 70, las colaboraciones entre artistas comenzaron a ser más comunes y a menudo eran entre artistas de diferentes géneros musicales. Por ejemplo, la colaboración entre David Bowie y Mick Jagger en la canción "Dancing in the Street" en 1985 fue uno de los primeros ejemplos de una colaboración entre dos superestrellas del rock.
+</div>
+
+<!-- Insertar video  de canción Dancing in the Street -->
+<iframe class="yt-vid"  src="https://www.youtube.com/embed/HasaQvHCv4w?si=t9ZE6NGzn9-HCc3-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<div class="cont">
+La primera canción en colaboración que ganó el Grammy a la Mejor Canción del Año fue "Up Where We Belong" en 1983, interpretada por Joe Cocker y Jennifer Warnes.
+</div>
+
+<img class="img1" src="data/joe-img.jpg" alt="Italian Trulli">
+
+<div class="cont">
+  Con la llegada de la era digital y la globalización de la música, las colaboraciones entre artistas se han vuelto aún más comunes en las últimas décadas.
+  La facilidad para comunicarse y grabar desde diferentes lugares del mundo, la expansión de plataformas de streaming y la importancia de la promoción de la música en las redes sociales han llevado a que artistas de diferentes géneros y países se unan para crear nuevas canciones.
+  En ocasiones, el featuring, puede ser la llave de entrada de un artista al mercado de otro país. Se han visto colaboraciones de artistas de diferentes regiones. Tal es el caso de ´Despacito´, de gran popularidad en los Top Billboard, donde se unen los artistas latinoamericamenos Luis Fonsi y Daddy Yankee junto con Justin Bieber. 
+</div>
+
+<img class="img1" src="data/despacito-img.jpg" alt="Italian Trulli">
+
+<div class="cont">
+  También suele ser útil a la hora de agitar la audiencia de un artista juntándolo con otro de diferente perfil. 
+O, simplemente, surge de la colaboración entre dos amigos que les apetece hacer música juntos.  
+Veamos algunas de las colaboraciones más populares.
+</div>
+
+<section class="graphic">
+  <div class="select">
+    <div>
+      <span>Tiempo:</span> 
+      <select id="bar_time">
+        <option value="0">Todos</option>
+        <option value="1">50's</option>
+        <option value="2">60's</option>
+        <option value="3">70's</option>
+        <option value="4">80's</option>
+        <option value="5">90's</option>
+        <option value="6">00's</option>
+        <option value="7">10's</option>
+        <option value="8">20's</option>
+        <option value="9">Siglo XIX</option>
+        <option value="10">Siglo XX</option>
+      </select>
+    </div>
+    <div>
+      <span>Ranking:</span> 
+      <select id="bar_ranking">
+        <option value="1">Top 1</option>
+        <option value="10">Top 10</option>
+        <option value="20">Top 20</option>
+        <option value="30">Top 30</option>
+        <option value="40">Top 40</option>
+        <option value="50">Top 50</option>
+      </select>
+    </div>
+  </div>
+  <canvas id="bar_graph"></canvas>
+</section>
+
+</div>
+<script type="module" src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</body>
+<footer class="footer">
+  <h4>Metodología</h4>
+  <p>La base de datos utilizada para realizar el análisis hecho es la siguiente:
+    <a href="https://www.kaggle.com/datasets/dhruvildave/billboard-the-hot-100-songs" target="_blank" rel="noreferrer noopener">Datos</a>
+  </p>
+  
+ 
+ </footer>
